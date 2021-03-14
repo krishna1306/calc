@@ -24,3 +24,7 @@ jobs:
             . venv/bin/activate
             flake8 --exclude=venv* --statistics
             pytest -v --cov=calculator
+      # Step4: Store Test results
+      - store_test_results:
+          path: test-results
+
